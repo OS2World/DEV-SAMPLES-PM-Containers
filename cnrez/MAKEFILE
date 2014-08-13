@@ -1,0 +1,33 @@
+###########################################################################
+#                                                                         #
+# MAKE FILE FOR CNREZ.EXE                                                 #
+#                                                                         #
+# HISTORY:                                                                #
+#                                                                         #
+#  10-06-92 - created                                                     #
+#                                                                         #
+#  Rick Fishman                                                           #
+#  Code Blazers, Inc.                                                     #
+#  4113 Apricot                                                           #
+#  Irvine, CA. 92720                                                      #
+#  CIS ID: 72251,750                                                      #
+#                                                                         #
+###########################################################################
+
+BASE=cnrez
+
+CFLAGS=/Q+ /Ss /W3 /Kbcepr /Gm- /Gd- /Ti+ /O- /C
+LFLAGS=/NOI /NOE /MAP /DE /NOL /A:16 /EXEPACK /BASE:65536
+
+.SUFFIXES: .c
+
+.c.obj:
+    icc $(CFLAGS) $*.c
+
+$(BASE).exe: $*.obj $*.res $*.def
+    link386 $(LFLAGS) $*,,, os2386, $*
+    rc $*.res $@
+
+$(BASE).res: $*.rc
+    rc -r $*
+

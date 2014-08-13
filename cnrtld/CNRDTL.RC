@@ -1,0 +1,32 @@
+#include <os2.h>                        // OS/2 definitions
+#include "cnrdtl.h"                     // Application defs
+
+STRINGTABLE
+BEGIN
+  IDS_HEAD_STATE, "\012State"
+  IDS_HEAD_CAP,   "\012Capital"
+  IDS_HEAD_POP,   "Population\012(1980 Census)"
+  IDS_HEAD_ADM,   "Entered\012Union"
+  IDS_TITLE,      "State Information Table\012(1987 Almanac)"
+END
+
+DLGTEMPLATE IDLG_EXAMPLE LOADONCALL MOVEABLE DISCARDABLE
+BEGIN
+  DIALOG  "State Information", IDLG_EXAMPLE, 40, 27, 200, 150, 
+          WS_VISIBLE, FCF_SYSMENU | FCF_TITLEBAR
+  BEGIN
+    CONTROL    "",   IDCN_STATEINFO,
+                     20,  31, 160, 110, WC_CONTAINER,
+                     CCS_SINGLESEL | CCS_READONLY |
+                     CCS_MINIRECORDCORE | 
+                     WS_GROUP | WS_TABSTOP | WS_VISIBLE
+               PRESPARAMS PP_FONTNAMESIZE,"8.Helv\0"
+               
+    GROUPBOX   "", 300, 19, 30, 162, 116
+    
+ DEFPUSHBUTTON "OK",     DID_OK,     15, 9, 48, 13, WS_GROUP
+    PUSHBUTTON "Cancel", DID_CANCEL, 78, 9, 48, 13,
+               NOT WS_TABSTOP
+  END
+END
+

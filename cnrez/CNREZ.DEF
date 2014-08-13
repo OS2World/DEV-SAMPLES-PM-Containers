@@ -1,0 +1,8 @@
+NAME           CNREZ      WINDOWAPI
+
+DESCRIPTION    'Container sample program Copyright(R) Code Blazers, Inc. 1992'
+PROTMODE
+HEAPSIZE       16384
+STACKSIZE      16384
+
+

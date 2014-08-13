@@ -1,0 +1,40 @@
+/*********************************************************************
+ *                                                                   *
+ * MODULE NAME :  cnrbase.rc             AUTHOR:  Rick Fishman       *
+ * DATE WRITTEN:  10-09-92                                           *
+ *                                                                   *
+ * DESCRIPTION:                                                      *
+ *                                                                   *
+ *  Resource file for CNRBASE.EXE.                                   *
+ *                                                                   *
+ * HISTORY:                                                          *
+ *                                                                   *
+ *  10-09-92 - File Created                                          *
+ *                                                                   *
+ *  Rick Fishman                                                     *
+ *  Code Blazers, Inc.                                               *
+ *  4113 Apricot                                                     *
+ *  Irvine, CA. 92720                                                *
+ *  CIS ID: 72251,750                                                *
+ *                                                                   *
+ *********************************************************************/
+
+#include <os2.h>
+#include "cnrbase.h"
+
+MENU ID_RESOURCES
+{
+    SUBMENU  "~View", -1
+    {
+        MENUITEM "~Tree/icon",        IDM_TREE
+        MENUITEM "~Name/flowed",      IDM_NAME
+        MENUITEM "~Icon",             IDM_ICON
+        MENUITEM "~Details",          IDM_DETAILS
+        MENUITEM "T~ext/flowed",      IDM_TEXT
+    }
+}
+
+/*********************************************************************
+ *                  E N D     O F     S O U R C E                    *
+ *********************************************************************/
+

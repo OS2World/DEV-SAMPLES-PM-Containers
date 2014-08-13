@@ -1,0 +1,37 @@
+CNREZ.EXE is a sample program that demonstrates setting up a simple container.
+It creates a standard window with a container as a child of the client window.
+Once created, records are inserted into the container and the window is
+displayed.
+
+Child records are created under each top-level record to demonstrate the Tree
+view.
+
+Once the container is displayed, Name, Icon, Detail and Text views are
+selectable from an actionbar pulldown. Simple direct-editing is enabled.
+
+This sample is meant to demonstrate the setting up of a container and nothing
+more. Drag/drop, Context Menus, Shared records, Deltas, Ownerdraw are just some
+of the things *not* covered here. I hope to upload a sample with these features
+at a later date.
+
+DISCLAIMER: This program intentionally does no error-checking and uses global
+variables. This is to provide an easy to understand program flow. I do not like
+to code this way and had to kick myself several times while coding it, but the
+clarity is better this way.
+
+Hopefully CNREZ will be of some use to beginning container programmers.
+
+In order to feel good about myself<g>, I coded up another sample in CNRBAS.ZIP
+that I am uploading at the same time as CNREZ. CNRBASE uses extensive error-
+checking and uses window words to get rid of those nasty global variables. It
+recursively displays all the files in a directory and its subdirectories,
+using a secondary thread to keep the container available to the user while
+filling it with records.
+
+Rick Fishman
+Code Blazers, Inc.
+4113 Apricot
+Irvine, CA 92720
+
+CIS ID: 72251,750
+

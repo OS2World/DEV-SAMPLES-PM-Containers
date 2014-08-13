@@ -1,0 +1,31 @@
+COLUMN NAME:
+Advanced PM Programming
+
+ARTICLE TITLE:
+Introducing Containers
+
+AUTHOR'S NAME:
+Guy Scharf
+
+BY-LINE:
+Same as before
+
+NOTES TO THE EDITOR:
+
+1)  Please run CNRDTL.EXE and put a shot of the dialog with the article
+as Figure 1.
+
+FILES INCLUDED:
+
+    CNRDTL.MSC          This file
+    CNRDTL.TXT          Article as ASCII Text    
+    CNRDTL.WP           Article in WordPerfect 5.1 format
+    CNRDTL.EXE          Sample program
+
+    CNFUNC.C            Source code files
+    CNRDTL.C
+    CNRDTL.H
+    CNFUNC.H
+    CNRDTL.DEP
+    CNRDTL.MAK
+    CNRDTL.RC

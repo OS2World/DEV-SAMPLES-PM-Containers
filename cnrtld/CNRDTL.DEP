@@ -1,0 +1,34 @@
+# IBM Developer's Workframe/2 Make File Creation run at 23:50:57 on 09/17/92
+
+# Make File Creation run in directory:
+#   D:\P\MAGAZINE\CNRDTL;
+
+# Assumed INCLUDE environment variable path:
+#   C:\TOOLKT20\C\OS2H;
+#   C:\TOOLKT20\ASM\OS2INC;
+#   C:\IBMC\INCLUDE;
+#   E:\GPF\INCLUDE;
+
+
+CNRDTL.RES:  CNRDTL.RC  \
+#  {.;$(INCLUDE)}OS2.H  \
+   {.;$(INCLUDE)}CNRDTL.H  \
+#    {.;$(INCLUDE)}FCLCNRP.H  \
+   CNRDTL.MAK
+
+CNFUNC.OBJ:  CNFUNC.C  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}stdlib.h  \
+#  {$(INCLUDE);}string.h  \
+   {.;$(INCLUDE);}cnfunc.h  \
+   CNRDTL.MAK
+
+CNRDTL.OBJ:  CNRDTL.C  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}stdlib.h  \
+#  {$(INCLUDE);}stddef.h  \
+#  {$(INCLUDE);}string.h  \
+   {.;$(INCLUDE);}cnrdtl.h  \
+#    {$(INCLUDE);}fclcnrp.h  \
+   {.;$(INCLUDE);}cnfunc.h  \
+   CNRDTL.MAK

@@ -1,0 +1,10 @@
+NAME           CNRBASE      WINDOWAPI
+
+NEWFILES
+
+DESCRIPTION    'Container sample program Copyright(R) Code Blazers, Inc. 1992'
+PROTMODE
+HEAPSIZE       16384
+STACKSIZE      32768
+
+

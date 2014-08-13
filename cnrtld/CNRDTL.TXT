@@ -1,0 +1,67 @@
+Column Name: Advanced PM Programming
+Column Title: Introducing Containers
+
+
+Written by Guy Scharf. Published in the December issue of OS/2 Monthly.
+(c) Copyright 1992 Software Architects, Inc.
+
+
+<BIntroducing Containers>
+
+OS/2 2.0 introduces four new controls-slider, value set,
+notebook, and container.  This month we will take a first
+look at containers.
+
+First, what <Iis> a container?  You have seen containers-lots
+of them. The container control is one of the key
+components of the Workplace Shell.  A container displays
+to the user the items, or objects, in contains in a visual
+way.  Virtually everything you see on the OS/2 desktop
+before starting a program or opening a settings view is a
+container.
+
+If you open the drives folder, select a drive, and open it,
+you will see <I>a container showing directories on the drive,
+arranged hierarchially.  This representation is called a tree
+view.  Select Open from the system menu again, press the
+right arrow button, and you can open Settings, Icon view,
+Tree view, and Details view.  These three views are all
+different ways a container can display the directories and
+files on a drive.
+
+The container control supports five views of its contents:
+
+Icon View     Icons or bitmaps with strings beneath. 
+              The Workplace Shell desktop normally
+              displays objects this way.
+
+Name View     Icons or bitmaps with text to the right.
+
+Text View     Text strings without any pictorial
+              representation.
+
+Tree View     Icons or bitmaps with text to the right
+              and with a way to display a hierarchy
+              (often indicated by + and - signs).
+
+Details View  Icons or bitmaps, text strings, numbers,
+              times, and/or dates.
+
+Container windows support <Idirect manipulation>-the user
+can select items with the mouse and drag them around. 
+The user can drag items and drop them onto other
+containers, applications, or windows.
+
+It is the container control that gives OS/2 2.0 and the
+Workplace Shell much of its flavor.
+
+A container may change the way in which its contents are
+displayed by changing the view.  In the Workplace Shell,
+different views are typically seen by opening windows with
+that alternate view.  It is possible to change the view within
+a single window.  Only one view can be displayed in one
+container window at a time.
+
+
+The remainder of this article can be found in the December issue of OS/2 Monthly.
+
